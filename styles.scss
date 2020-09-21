@@ -19,6 +19,7 @@ $font-family-monospace: "Courier New";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 $body-color: #000000;
+$enable-shadows: true;
 
 $btn-border-radius: 10rem;
 $btn-font-family: $headings-font-family;
@@ -27,14 +28,13 @@ $btn-font-weight: bold;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.navbar {
+nav {
   font-family: 'Poppins';
-  box-shadow: 5px black;
-  border-bottom-style: solid black;
+  border-bottom: 1px solid black;
 }
 
 .hero {
-  background-image: linear-gradient(to bottom,#BB6BD9,#2D9CDB);
+  background-image: linear-gradient(to bottom right,#BB6BD9,#2D9CDB);
 
   img {
     max-height: 200px;
@@ -45,14 +45,6 @@ $btn-font-weight: bold;
       100% { transform: translateY(+10px);}
     }
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
-  }
-}
-
-.box {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-
-  img {
-    max-height: 200px;
   }
 }
 
