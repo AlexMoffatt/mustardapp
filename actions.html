@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/85296f5021.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow">
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow mb-4">
         <a class="navbar-brand" href="landing.html"><b>mustard</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
@@ -26,13 +28,110 @@
         </div>
     </nav>
 
-    <div class="container-fluid mx-5">
+    <div class="container mx-auto mb-4">
       <form class="form-inline">
-        <i class="fas fa-search" aria-hidden="true"></i>
-        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-          aria-label="Search">
+        <i class="fas fa-search mr-2" aria-hidden="true"></i>
+        <input class="form-control mr-4" type="text" placeholder="Search" aria-label="Search">
+        <div class="btn-group">
+          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Units</button>
+          <div class="dropdown-menu dropdown">
+            <a class="dropdown-item" href="#">Food & drink</a>
+            <a class="dropdown-item" href="#">Energy</a>
+            <a class="dropdown-item" href="#">Travel</a>
+            <a class="dropdown-item" href="#">Shopping</a>
+            <a class="dropdown-item" href="#">Lifestyle</a>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All categories</button>
+          <div class="dropdown-menu dropdown">
+            <a class="dropdown-item" href="#">Food & drink</a>
+            <a class="dropdown-item" href="#">Energy</a>
+            <a class="dropdown-item" href="#">Travel</a>
+            <a class="dropdown-item" href="#">Shopping</a>
+            <a class="dropdown-item" href="#">Lifestyle</a>
+          </div>
+        </div>
       </form>
+    </div>
 
+    <div class="container">
+      <div class="row mb-4">
+          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="shadow p-2 bg-orange rounded" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#" class="stretched-link"></a>
+              <h6 class="text-white"><b>Go vegan for an entire year, yer try that</b></h6>
+              <h2 class="text-center text-dark mb-0"><b>1000</b></h2>
+              <h6 class="text-center text-light"><small>kg CO2e</small></h6>
+              <h6 class="mb-0 text-white text-right">Hard</h6>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="shadow p-2 bg-yellow rounded">
+              <a href="#" class="stretched-link"></a>
+              <h6 class="text-white"><b>Go vegan for an entire year, yer try that</b></h6>
+              <h2 class="text-center text-dark mb-0"><b>1000</b></h2>
+              <h6 class="text-center text-light"><small>kg CO2e</small></h6>
+              <h6 class="mb-0 text-white text-right">Hard</h6>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="shadow p-2 bg-red rounded">
+              <a href="#" class="stretched-link"></a>
+              <h6 class="text-white"><b>Go vegan for an entire year, yer try that</b></h6>
+              <h2 class="text-center text-dark mb-0"><b>1000</b></h2>
+              <h6 class="text-center text-light"><small>kg CO2e</small></h6>
+              <h6 class="mb-0 text-white text-right">Hard</h6>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="shadow p-2 bg-green rounded">
+              <a href="#" class="stretched-link"></a>
+              <h6 class="text-white"><b>Go vegan for an entire year, yer try that</b></h6>
+              <h2 class="text-center text-dark mb-0"><b>1000</b></h2>
+              <h6 class="text-center text-light"><small>kg CO2e</small></h6>
+              <h6 class="mb-0 text-white text-right">Hard</h6>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="shadow p-2 bg-blue rounded">
+              <a href="#" class="stretched-link"></a>
+              <h6 class="text-white"><b>Go vegan for an entire year, yer try that</b></h6>
+              <h2 class="text-center text-dark mb-0"><b>1000</b></h2>
+              <h6 class="text-center text-light"><small>kg CO2e</small></h6>
+              <h6 class="mb-0 text-white text-right">Hard</h6>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="shadow p-2 bg-purple rounded">
+              <a href="#" class="stretched-link"></a>
+              <h6 class="text-white"><b>Go vegan for an entire year, yer try that</b></h6>
+              <h2 class="text-center text-dark mb-0"><b>1000</b></h2>
+              <h6 class="text-center text-light"><small>kg CO2e</small></h6>
+              <h6 class="mb-0 text-white text-right">Hard</h6>
+            </div>
+          </div>
+      </div>
     </div>
 
     <footer class="text-white" style="background-color: #242F4B">
@@ -41,8 +140,9 @@
           <div class="col-md-6 mb-3">
             <h3><b>mustard</b></h3>
             <p>Reduce your carbon footprint. Find out the most impactful things you can do for the planet.</p>
+            <p class="mb-1"><small>Sign up to our newsletter below:</small></p>
             <form class="input-group mb-3">
-              <input type="text" class="form-control form-control-sm" placeholder="Enter your email" aria-label="Your email" aria-describedby="basic-addon2">
+              <input type="text" class="form-control form-control-sm" placeholder="Enter your email" aria-label="Your email" aria-describedby="newsletter-signup">
               <div class="input-group-append">
                 <button class="btn btn-sm btn-green" type="button">Sign up</button>
               </div>

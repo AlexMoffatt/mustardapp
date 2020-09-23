@@ -24,9 +24,6 @@ $enable-shadows: true;
 $btn-border-radius: 10rem;
 $btn-font-family: $headings-font-family;
 $btn-font-weight: bold;
-.btn{
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-}
 
 nav {
   font-family: 'Poppins';
@@ -48,6 +45,10 @@ nav {
   }
 }
 
+.overlay {
+  position:absolute;
+}
+
 footer {
   .navbar {
     padding: 0;
@@ -62,7 +63,7 @@ footer {
   }
 }
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 /*
 // Required
